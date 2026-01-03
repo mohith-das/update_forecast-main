@@ -1,0 +1,6 @@
+steps:
+  - name: "gcr.io/google.com/cloudsdktool/cloud-sdk"
+    entrypoint: bash
+    args: [ "./deploy_update_forecast.sh" ]
+    waitFor: [ "-" ]
+timeout: "20m"
